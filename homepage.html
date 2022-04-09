@@ -5,31 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-/Projekt-Manager</title>
-    <link rel="style.css" href="style.css" />
-</head>
+<link rel="stylesheet" href=".\assets\style.css"/>
+<head>
 <body>
-    <h1>Task-/Projekt-Manager</h1>
+    <h1>Task-/Projekt-Manager </h1>
     <main>
-    <p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnrfWqiKbD-2vYrvlOLrQeAjoRYqKRGygN4A&usqp=CAU"
+        <form>
+            <div>
+                <label>Name:</label>
+                <input type="text" />
+                <label>Passwort:</label>
+                <input type="password" />
+                <label >New Account!</label>
+                <input type="button"/>
+              </div>
+        </form>
+    <p class="bild1">
+        <img src=https://www.societybyte.swiss/wp-content/uploads/2018/06/Projektmanagement_ret.jpg
        alt="">
     </p>
-    <p> 
-        <h3>
-            Kategorie wählne
-        </h3>
+    <p class="bild2">
+        <img src="https://www.it-daily.net/images/Aufmacher-2019/Projektmanagement_Concept_shutterstock_403713811_700.jpg" alt="">
     </p>
-    
+    <form>
+        
+        <div>
+          <input type="date" />
+          <input type="file" />
+          <input type="color" />
+          <input type="number" />
+          <input type="range" />
+        </div>
+        <div>
+          <input type="radio" name="farbe" value="Rot" /><label>Rot</label>
+          <input type="radio" name="farbe" value="Grün" /><label>Grün</label>
+          <input type="radio" name="farbe" value="Blau" /><label>Blau</label>
+          <input type="checkbox" />
+        </div>
+      </form>
+    <p> 
+        <h2>
+            Kategorie wählne
+        </h2>
+    </p>
+  
     <p>
         <ol>
-            <li>      
-                   <button type="button1">Projekt</button>
+            <li>     
+                <a href="Projekt_Home.html">
+                   <button type="button1">Projekt </button>
+                </a> 
             </li>
+            
             <li>
+                
+              <a href="List.html">  
+            
+
                 <button type="button2">List</button>
+           </a>
             </li>
+        
             <li>
+                <a href="ToDo.html">
                 <button type="button3">ToDo</button>
+            </a>
             </li>
         </ol>
         </p>
