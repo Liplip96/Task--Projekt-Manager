@@ -1,4 +1,7 @@
 
+
+
+
 body{
 background-color: rgb(108, 216, 243); 
 padding: middle;
@@ -48,3 +51,26 @@ border-radius: 6px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes pulse {
+    20% {
+      padding: 30px;
+      background-color: rgb(13, 79, 122);
+    }
+  }
+  button {
+    border: 1px solid black;
+    width:min-content;
+    background-color: rgb(165, 205, 252);
+    padding: 1px;
+    animation: pulse 2s;
+    transition: background-color 1s, padding 2s ease  }
+ 
+ 
+    /*label:hover {
+    background-color: red;
+    padding: 30px;
+  }
+  */
+  div{
+      padding-left: 70%;
+  }
