@@ -7,6 +7,7 @@
     <title>Test</title>
     <link rel="stylesheet" href="assets\Test.css">
 </head>
+
 <body>
     <main>
         <div class="popup">
@@ -16,8 +17,28 @@
           <h1>Beispiel</h1>
           <p>Hier ist der Text der Seite</p>
           <p>Noch mehr Text</p>
-         <p>
-        </p>
+          <div class="dt">
+            <script>
+            date = new Date().toLocaleDateString();
+            document.write(date);
+            </script>
+            </div>
+            <div>
+                <script>
+                    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                    </script>
+            </div>
+
+            <div>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var i = 10;
+                    if (i < 5) {
+                      // some code
+                    }
+                    //]]>
+                    </script>
+            </div>
     </main>
     
 </body>
