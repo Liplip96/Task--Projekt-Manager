@@ -55,7 +55,7 @@ button:hover {
 #beschreibung{
     padding: auto;
     background: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 @keyframes pulse {
