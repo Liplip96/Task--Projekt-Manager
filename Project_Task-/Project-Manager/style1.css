@@ -5,13 +5,17 @@ img{
 }
 body{
     margin-top: 0%;
-    background-image:  url("Project_Task-\Project-Manager\Background.jpg") fixed;
+    background-image:  url("Background.jpg") ;
     /*background: aqua;*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .Block{
     background-color: aliceblue;
+    margin-left: 13%;
+    justify-content: center;
     width: 70%;
     height: 100%;
 }
