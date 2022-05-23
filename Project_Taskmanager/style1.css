@@ -17,9 +17,15 @@ img{
     border-radius: 20px;
 }
 
+.content{
+    padding: auto;
+}
+
 
 .Block{
     background-color: aliceblue;
+    margin-left: 13%;
+    justify-content: center;
     width: 70%;
     height: 100%;
 
