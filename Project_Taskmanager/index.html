@@ -21,32 +21,24 @@
 
         </div>
 
-        <form>
+        <form action="#">
             <div>
                 <label>Name:</label>
-                <input type="text" />
+                <input name="loginName" id="name" type="text" />
                 <label>Passwort:</label>
-                <input type="password" />
+
+                <div class="passwort-behälter">
+                    <input name="passwort" id="passwort" type="password" placeholder="Passwort" class="passwort-feld" />
+                    <a role="button" class="passwort-button" onclick="passwortSichtbarkeitUmschalten('passwort')">
+                        <button id="passwortAnzeigen" class="passwortAnzeigen"> passwort anzeigen</button>
+                        <button id="passwortNichtmehrAnzeigen" class="passwortNichtmehrAnzeigen">passwort nichtmehr
+                            anzeigen </button>
+                    </a>
+                </div>
+
                 <label type="button">New Account!</label>
             </div>
-
-            <form action="#">
-                <div>
-                    <label>Name:</label>
-                    <input name="loginName" id="name" type="text" />
-                    <label>Passwort:</label>
-
-                    <div class="passwort-behälter">
-                        <input name="passwort" id="passwort" type="password" placeholder="Passwort" class="passwort-feld"/>
-                        <a role="button" class="passwort-button" onclick="passwortSichtbarkeitUmschalten('passwort')">
-                            <button id="passwortAnzeigen" class="passwortAnzeigen" > passwort anzeigen</button>
-                            <button id="passwortNichtmehrAnzeigen" class="passwortNichtmehrAnzeigen">passwort nichtmehr anzeigen </button>
-                        </a>
-                    </div>
-
-                    <label type="button">New Account!</label>
-                </div>
-            </form>
+        </form>
 
         <div class="Bild-Projektmanagement">
             <img src="https://www.societybyte.swiss/wp-content/uploads/2018/06/Projektmanagement_ret.jpg"
@@ -59,7 +51,7 @@
             Projekte für sie Organisiert.
         </p>
 
-            <a href="Project_Task-\Project-Manager/ToDo_Notes.html">
+        <a href="Project_Task-\Project-Manager/ToDo_Notes.html">
 
             <button type="button"> Manager Starten! </button>
 
