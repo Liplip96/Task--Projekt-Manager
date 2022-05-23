@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-/Project-Manager</title>
     <link rel="stylesheet" href=style1.css>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
- 
+
     <div class="Block">
         <section>
             <div class="Titel">
@@ -20,13 +20,21 @@
                 </h1>
 
             </div>
-            
-            <form>
+
+            <form action="#">
                 <div>
                     <label>Name:</label>
-                    <input type="text" />
+                    <input name="loginName" id="name" type="text" />
                     <label>Passwort:</label>
-                    <input type="password" />
+
+                    <div class="passwort-behälter">
+                        <input name="passwort" id="passwort" type="password" placeholder="Passwort" class="passwort-feld"/>
+                        <a role="button" class="passwort-button" onclick="passwortSichtbarkeitUmschalten('passwort')">
+                            <button id="passwortAnzeigen" class="passwortAnzeigen" > passwort anzeigen</button>
+                            <button id="passwortNichtmehrAnzeigen" class="passwortNichtmehrAnzeigen">passwort nichtmehr anzeigen </button>
+                        </a>
+                    </div>
+
                     <label type="button">New Account!</label>
                 </div>
             </form>
@@ -42,7 +50,7 @@
                 Projekte für sie Organisiert.
             </p>
 
-            <a href="Project_Task-\options.html">
+            <a href="Project_Task-\Project-Manager/ToDo_Notes.html">
 
                 <button type="button"> Manager Starten! </button>
 

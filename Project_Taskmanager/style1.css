@@ -1,19 +1,30 @@
 
+body{
+    margin-top: 0%;
+    /* background-image:  url("Project_Task-/Project-Manager/Background.jpg") fixed;*/
+    /*background: aqua;*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:  url("Background.jpg");
+    /*background: aqua;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 img{
     max-width: 100%;
     border-radius: 20px;
 }
-body{
-    margin-top: 0%;
-    background-image:  url("Project_Task-\Project-Manager\Background.jpg") fixed;
-    /*background: aqua;*/
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .Block{
     background-color: aliceblue;
     width: 70%;
     height: 100%;
+
+
+
 }
 
 h1{
@@ -43,6 +54,7 @@ button:hover{
     animation: infinite 1s;
 }
 
-
-
+.passwortNichtmehrAnzeigen{
+    display: none;
+}
 
