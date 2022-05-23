@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo-Notes</title>
     <link rel="stylesheet" href=style1.css>
-    <script src="../script.js"></script>
+    <script src="../script.js" defer></script>
 </head>
 
 <body>
@@ -24,25 +24,39 @@
                 document.write(date);
             </script>
         </div>
-        <div class="Note">
-            <div class="Note1">
-                <p>
-                    <p>
-                        <input id="Notename-input1" type="text" name="notemameInput" placeholder="Note-Name" />
-                    <label>Deadline</label>
-                    <input id="datetime-input1" type="datetime-local" name="datetime" placeholder="Price" />
-                </p>
-                    <textarea name="text" id="NoteBlock1" name="content" cols="35" rows="10">
+        <div class="Note1">
+            <p>
+            <p>
+                <input id="Notename-input1" type="text" name="notemameInput" placeholder="Note-Name" />
+                <label>Deadline</label>
+                <input id="datetime-input1" type="datetime-local" name="datetime" placeholder="Price" />
+            </p>
+            <textarea name="text" id="NoteBlock1" name="content" cols="35" rows="10">
                     </textarea>
-                    <div class="field">
-                        <label>Notiz</label>
-                        <input id="Content-input" class="content" type="text" name="inhalt" placeholder="inhalt" />
-                    </div>
-                    <input type="checkbox" id="dun">
-                </p>
+            <div class="field">
+                <label>Notiz</label>
+                <input id="Content-input" class="content" type="text" name="inhalt" placeholder="inhalt" />
             </div>
+            <input type="checkbox" id="dun">
+            </p>
 
-            <!-- 
+        </div>
+
+        <div>
+            <h1>Todo Liste</h1>
+            <input type="text" id="todo_input" placeholder="hier eintragen">
+            <button id="add_button">Anlegen</button>
+
+
+            <ul id="todo_ul">
+                <li>Einkaufen</li>
+                <li>Kochen</li>
+                <li>Hausaufgaben machen</li>
+            </ul>
+        </div>
+
+
+        <!-- 
             <div class="Note2">
                 <p>
                     <p>
@@ -84,7 +98,6 @@
             </div>
             -->
 
-        </div>
 
         <button id="save-button"> Save Note ! </button>
         <button id="delete-note"> Delete Note ! </button>
@@ -101,7 +114,7 @@
             <tbody id="table-body">
             </tbody>
         </table>
-        
+
 
     </main>
 

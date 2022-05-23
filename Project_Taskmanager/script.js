@@ -1,4 +1,16 @@
-console.log("Hallo");
+"use strict"
+
+const todo_input = document.getElementById("todo_input")
+const add_buton = document.getAnimations.getElementById("add_button")
+const todo_ul = document.getElementById("todo_ul")
+
+add_button.addEventListener("click", () => {
+   let input = todo_input.value;
+   let newTodo = document.createElement("li");
+   newTodo.innerText = input;
+
+   todo_ul.appendChild(newTodo);
+})
 
 const savebutton = document.getElementById("save-button");
 const tableBody = document.getElementById("table-body");
@@ -7,7 +19,7 @@ savebutton.addEventListener ("click", savebutton);
 
 const contentOne = document.getElementById("content");
 const notenameInput = document.getElementById("Notename-input1");
-const Note1 = document.getElementById("NoteBlock1");
+const Note = document.getElementById("NoteBlock1");
 const datetime1 = document.getElementById("datetime-input1");
 
 
@@ -62,23 +74,21 @@ function enterNote(evt) {
     createNewNoteData();
 }
 
+
+
+const divElement = document.getElementsByName("div-element");
+console.log(divElement);
+
+divElement.Element.textContent =" Das ist ein neuer Inhalt";
+
+divElement.classList.add("test-classe");
+
 function passwortSichtbarkeitUmschalten(eingabefeldId){
-    const passwortwortFeld = document.getElementById(eingabefeldId);
-    if(passwortwortFeld.type == "password"){
-    passwortwortFeld.type = "text";  
-    }else{
-        passwortwortFeld.type = "password";
-    }
+const passwortFeld = document.getElementById(eingabefeldId);
+if(passwortFeld.type === "password"){
+passwortFeld.type = "text";  
+}else{
+    passwortFeld.type = "password";
+}
+}
 
-
-const todo_input = document.getElementById("todo_input")
-const add_buton = document.getAnimations.getElementById("add_button")
-const todo_ul = document.getElementById("todo_ul")
-
-add_button.addEventListener("click", () => {
-   let input = todo_input.value
-   let newTodo = document.createElement("li") 
-   newTodo.innerText = input
-
-   todo_ul.appendChild(newTodo)
-})
