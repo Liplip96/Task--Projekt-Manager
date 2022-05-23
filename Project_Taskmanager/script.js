@@ -1,21 +1,27 @@
-"use strict"
 
-const todo_input = document.getElementById("todo_input")
-const add_buton = document.getAnimations.getElementById("add_button")
-const todo_ul = document.getElementById("todo_ul")
+const todo_input = document.getElementById("todo_input");
+const add_buton = document.getAnimations.getElementById("add_button");
+const todo_ul = document.getElementById("todo_ul");
 
 add_button.addEventListener("click", () => {
-   let input = todo_input.value;
-   let newTodo = document.createElement("li");
-   newTodo.innerText = input;
+    let input = todo_input.value;
+    let newTodo = document.createElement("li");
+    newTodo.innerText = input;
+    let delete_button = document.createElement("button");
+    delete_button.innerText="x";
+    newTodo.appendChild(delete_button);
 
-   todo_ul.appendChild(newTodo);
+    todo_ul.appendChild(newTodo);
+
+    delete_button.addEventListener("click", () =>{
+        newTodo.remove();
+    })
 })
 
 const savebutton = document.getElementById("save-button");
 const tableBody = document.getElementById("table-body");
 
-savebutton.addEventListener ("click", savebutton);
+savebutton.addEventListener("click", savebutton);
 
 const contentOne = document.getElementById("content");
 const notenameInput = document.getElementById("Notename-input1");
@@ -28,7 +34,7 @@ function handleDelete(evt, parentElement) {
 }
 
 
-function createNewNoteData(){
+function createNewNoteData() {
     const tableEntry = document.createElement("tr");
     tableEntry.classList.add("table-entry");
     const notename = notenameInput.value;
@@ -50,7 +56,7 @@ function createNewNoteData(){
         tableEntry.appendChild(cell);
     }
     tableBody.appendChild(tableEntry);
-  
+
 };
 
 function createTableCell(value, name) {
@@ -79,16 +85,16 @@ function enterNote(evt) {
 const divElement = document.getElementsByName("div-element");
 console.log(divElement);
 
-divElement.Element.textContent =" Das ist ein neuer Inhalt";
+divElement.Element.textContent = " Das ist ein neuer Inhalt";
 
 divElement.classList.add("test-classe");
 
-function passwortSichtbarkeitUmschalten(eingabefeldId){
-const passwortFeld = document.getElementById(eingabefeldId);
-if(passwortFeld.type === "password"){
-passwortFeld.type = "text";  
-}else{
-    passwortFeld.type = "password";
-}
+function passwortSichtbarkeitUmschalten(eingabefeldId) {
+    const passwortFeld = document.getElementById(eingabefeldId);
+    if (passwortFeld.type === "password") {
+        passwortFeld.type = "text";
+    } else {
+        passwortFeld.type = "password";
+    }
 }
 
