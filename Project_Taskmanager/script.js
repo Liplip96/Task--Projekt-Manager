@@ -15,8 +15,8 @@ add_button.addEventListener("click", () => {
 
     delete_button.addEventListener("click", () =>{
         newTodo.remove();
-    })
-})
+    });
+});
 
 const savebutton = document.getElementById("save-button");
 const tableBody = document.getElementById("table-body");
