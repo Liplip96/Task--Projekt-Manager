@@ -5,6 +5,8 @@ const todo_ul = document.getElementById("todo_ul");
 const notename_input = document.getElementById("Notename-input");
 const noteTime_input = document.getElementById("datetime-input");
 
+//Legt Datum,Name von Notiz und Inhalt in Tabelle "li" ab.
+//fügt Entfernenbutton der angelegten Tabelle an.
 add_button.addEventListener("click", () => {
     const tInput = noteTime_input.value;
     const nInput = notename_input.value;
@@ -21,7 +23,7 @@ add_button.addEventListener("click", () => {
         newTodo.remove();
     });
 });
-
+//Durch "click" wird type von Passwort auf Text gewechselt.
 divElement.classList.add("test-classe");
 
 function passwortSichtbarkeitUmschalten(eingabefeldId) {
@@ -33,16 +35,19 @@ function passwortSichtbarkeitUmschalten(eingabefeldId) {
     };
 };
 
-/*
-const login_name = document.getElementById(loginName);
+
+
+
+const login_name = document.getElementById("loginName");
 const login_password = document.getElementById("passwort");
-const loginButton = document.getElementById("anmelden");
+const loginButton = document.getElementById("loginButton");
 
-
- if (login_name == User || login_password == passwort) {
+loginButton.addEventListener("click", () => {
+    if (login_name == User || login_password == passwort) {
         loginButton.href = "ToDo_Notes.html";
-
-    else {
-        alert(wrong password ore username);
+        alert("Hallo User");
     }
-};*/
+    else {
+        alert("wrong password ore username");
+    }
+});
