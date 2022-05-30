@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark: #374151;
     --darker: #1F2937;
     --darkest: #111827;
@@ -6,6 +6,9 @@
     --light: #eee;
     --pink: #EC4899;
     --purple: #8B5Cf6;
+    --lightgreen: #40FF00;
+    --blue: #0000FF;
+    --darkpurple: #610B5E;
 }
 
 * {
@@ -18,11 +21,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--dark);
+    background-image: linear-gradient(to right, var(--darkpurple), var(--purple));
     color: #fff;
 }
 
-header{
+header {
     padding: 2rem 1rem;
     max-width: 800px;
     width: 100%;
@@ -38,18 +41,19 @@ header h1 {
 
 }
 
-#new-task-form{
+#new-task-form {
     display: flex;
 }
 
-input, button{
+input,
+button {
     appearance: none;
     border: none;
     outline: none;
     background: none;
 }
 
-#new-task-input{
+#new-task-input {
     flex: 1 1 0%;
     background-color: var(--darker);
     padding: 1rem;
@@ -59,16 +63,16 @@ input, button{
     font-size: 1.25rem;
 }
 
-#new-task-input::placeholder{
+#new-task-input::placeholder {
     color: var(--gray);
 
 }
 
-#new-task-submit{
+#new-task-submit {
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink),var(--purple));
+    background-image: linear-gradient(to right, var(--lightgreen), var(--light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -76,7 +80,7 @@ input, button{
 
 }
 
-#new-task-submit:hover{
+#new-task-submit:hover {
     opacity: 0.6;
 }
 
@@ -84,7 +88,7 @@ input, button{
     opacity: 0.6;
 }
 
-main{
+main {
     flex: 1 1 0%;
     padding: 2rem 1rem;
     max-width: 880px;
@@ -93,7 +97,7 @@ main{
 
 }
 
-.task-list{
+.task-list {
     padding: 1rem;
 
 }
@@ -105,8 +109,8 @@ main{
     margin-bottom: 1rem;
 }
 
-#tasks .task{
-    display:flex;
+#tasks .task {
+    display: flex;
     justify-content: space-between;
     background-color: var(--darkest);
     padding: 1rem;
@@ -115,7 +119,7 @@ main{
 
 }
 
-#tasks .task .content{
+#tasks .task .content {
     flex: 1 1 0%;
 }
 
@@ -128,11 +132,11 @@ main{
 
 }
 
-#tasks .task .content .text:not(:read-only){
+#tasks .task .content .text:not(:read-only) {
     color: var(--pink);
 }
 
-#tasks .task .actions{
+#tasks .task .actions {
     display: flex;
     margin: 0 -0.5rem;
 
@@ -140,7 +144,7 @@ main{
 
 .task .actions button {
     cursor: pointer;
-    margin:0 0.5rem;
+    margin: 0 0.5rem;
     font-size: 1.125rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -149,7 +153,7 @@ main{
 
 }
 
-.task .actions button:hover{
+.task .actions button:hover {
     opacity: 0.6;
 }
 
@@ -158,7 +162,7 @@ main{
 }
 
 .task .actions .edit {
-    background-image: linear-gradient(to right, var(--pink),var(--purple));
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
