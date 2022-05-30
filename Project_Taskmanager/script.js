@@ -42,6 +42,15 @@ const login_name = document.getElementById("loginName");
 const login_password = document.getElementById("passwort");
 const loginButton = document.getElementById("loginButton");
 
+if (login_name == User || login_password == passwort) {
+    loginButton.href = "ToDo_Notes.html";
+    alert("Hallo User");
+} else {
+    alert("wrong password ore username");
+}
+
+
+/*
 loginButton.addEventListener("click", () => {
     if (login_name == User || login_password == passwort) {
         loginButton.href = "ToDo_Notes.html";
@@ -50,4 +59,4 @@ loginButton.addEventListener("click", () => {
     else {
         alert("wrong password ore username");
     }
-});
+});*/
